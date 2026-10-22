@@ -1,109 +1,203 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sabor Natural - Restaurante</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <section class="hero">
-            <!-- Cabeçalho -->
-            <header>
-                <div class="logo">
-                    <h1>Sabor Natural </h1>
-                    <img src="img/panela.svg" alt="">
-                </div>
-                <nav>
-                    <a href="#">Início</a>
-                    <a href="#">Cardápio</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">Contato</a>
-                </nav>
-                <a href="#">
-                    <button class="btn-pedido">Fazer Pedido</button>
-                </a>
-            </header>
-            <section class="home">
-                <h1>Bons Sabores, <br>Boas Histórias</h1>
-                <p>Pratos preparados com ingredientes <br> selecionados e com muito amor!</p>
-                <a href="#">
-                    <button class="btn-cardapio">Olhar Cardápio</button>
-                </a>
-            </section>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Natural - Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+    <section class="hero" id="inicio">
+
+        <header>
+
+            <div class="logo">
+                <h1>Sabor Natural</h1>
+                <img src="img/panela.svg" alt="Panela do Sabor Natural">
+            </div>
+
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#cardapio">Cardápio</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <a href="#cardapio" class="btn-pedido">Fazer Pedido</a>
+
+        </header>
+
+        <section class="home">
+
+            <h1>
+                Bons Sabores,<br>
+                Boas Histórias
+            </h1>
+
+            <p>
+                Pratos preparados com ingredientes<br>
+                selecionados e com muito amor!
+            </p>
+
+            <a href="#cardapio" class="btn-cardapio">Olhar Cardápio</a>
+
         </section>
 
-        <main>
-            <!-- Banner Principal -->
-                
+    </section>
 
-            <!-- Seção Cardápio -->
-            <section class="menu-section">
-                <h2>Nosso Cardápio</h2>
-                <div class="cardapio">
-                    <button>Todos</button>
-                    <button>Lanches</button>
-                    <button>Pratos Principais</button>
-                    <button>Sobremesas</button>
-                </div>
+    <!-- Conteúdo principal -->
+    <main>
 
-                <div class="card-grid">
-                    <!-- Card 1 -->
-                    <div class="card">
-                        <img src="img/home.jpeg" alt="X-Burgue">
-                        <div class="card-info">
-                            <h3>X-Burgue</h3>
-                            <p>R$ 22,00</p>
-                        </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="card">
-                        <img src="img/arroz grelhado com frango.jpeg" alt="Frango Grelhado">
-                        <div class="card-info">
-                            <h3>Arroz com frango grelhado</h3>
-                            <p>R$ 36,00</p>
-                        </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="card">
-                        <img src="img/torta de limão.jpeg" alt="Torta de Limão">
-                        <div class="card-info">
-                            <h3>Torta de Limão</h3>
-                            <p>R$ 41,00</p>
-                        </div>
+        <!-- Seção Cardápio -->
+        <section class="menu-section" id="cardapio">
+            <h2>Nosso Cardápio</h2>
+            <div class="cardapio">
+                <button>Todos</button>
+                <button>Lanches</button>
+                <button>Pratos Principais</button>
+                <button>Sobremesas</button>
+            </div>
+
+            <!-- Cards dos pratos -->
+            <div class="card-grid">
+
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="img/X-Burguer.png" alt="X-Burguer">
+
+                    <div class="card-info">
+                        <h3>X-Burguer</h3>
+                        <p>R$ 22,00</p>
                     </div>
                 </div>
-            </section>
 
-            <!-- Seção Ambiente -->
-            <section class="ambiente-section">
-                <div class="ambiente-banner">
-                    <h3>Ambiente Aconchegante e atendimento agradável</h3>
-                    <a href="#" class="btn-conheca">Conheça o Restaurante</a>
+                <!-- Card 2 -->
+                <div class="card">
+                    <img
+                        src="img/Arroz e frango grelhado.jpg"
+                        alt="Frango grelhado"
+                    >
+
+                    <div class="card-info">
+                        <h3>Arroz com frango grelhado</h3>
+                        <p>R$ 36,00</p>
+                    </div>
                 </div>
-            </section>
-        </main>
 
-        <!-- Rodapé -->
-        <footer class="footer">
+                <!-- Card 3 -->
+                <div class="card">
+                    <img
+                        src="img/Torta_de_limao.jpg"
+                        alt="Torta de limão"
+                    >
+
+                    <div class="card-info">
+                        <h3>Torta de Limão</h3>
+                        <p>R$ 41,00</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Seção Ambiente -->
+        <section class="ambiente-section" id="sobre">
+
+            <div class="ambiente-banner">
+
+                <h3>
+                    Ambiente Aconchegante e atendimento agradável
+                </h3>
+
+                <a href="#contato" class="btn-conheca">
+                    Conheça o Restaurante
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer" id="contato">
+        <div class="footer-conteudo">
+
+            <!-- Informações do restaurante -->
             <div class="footer-info">
-                <div class="logo">
-                    <img src="icone">
-                    <p>Sabor Natural</p>
+                <div class="footer-logo">
+                    <h1>Sabor Natural</h1>
+                    <img src="img/panela.svg" alt="Panela">
                 </div>
-                <p>Rua das Magnólias, 3432, Cidade Grande</p>
-                <p>13211-000 SP</p>
-                <p>(11) 97685-1134</p>
-            </div>
-            <div class="footer-social">
-                <p>Nossas redes Sociais</p>
-                <img src="icone">
-            </div>
-            <div class="footer-copy">
-                <p>&copy; 2026 Sabor Natural. Todos os direitos reservados.</p>
-            </div>
-        </footer>
-        
+                <p>Rua das Magnólias, 3432, Cidade Grande<br>13211-000 - SP</p>
+                <a href="tel:+5511976851134" class="footer-telefone">(11) 97685-1134</a>
 
-    </body>
+            </div>
+
+            <!-- Redes sociais -->
+            <div class="footer-social">
+
+                <h3>Nossas redes Sociais</h3>
+
+                <div class="footer-icones">
+
+                    <a
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a
+                        href="https://www.whatsapp.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="WhatsApp"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a
+                        href="https://x.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="X"
+                    >
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a
+                        href="https://www.tiktok.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="TikTok"
+                    >
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Direitos autorais -->
+        <div class="footer-copy">
+            <p>
+                &copy; 2026 Sabor Natural. Todos os direitos reservados.
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+
 </html>
